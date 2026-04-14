@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DGGRIDDialogBase</class>
+ <widget class="QDialog" name="DGGRIDDialogBase">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DGGRID Create</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>621</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string>Grid Cell For Extent</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>80</y>
+       <width>130</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Resolution</string>
+     </property>
+     <widget class="QSpinBox" name="sb_resolution">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>100</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>35</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>10</y>
+       <width>130</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>DGGS Type</string>
+     </property>
+     <widget class="QComboBox" name="cb_dggstype">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>100</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>ISEA7H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SUPERFUND</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PLANETRISK</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA3H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA4H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA4T</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA4D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA43H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IGEO7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER3H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER4H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER4T</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER4D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER43H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER7H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UBER H3</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>431</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Query Area</string>
+     </property>
+     <widget class="QDoubleSpinBox" name="sb_extent_maxy">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>8</number>
+      </property>
+      <property name="minimum">
+       <double>-90.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>90.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="sb_extent_maxx">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>60</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>8</number>
+      </property>
+      <property name="minimum">
+       <double>-180.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>180.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="sb_extent_minx">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>8</number>
+      </property>
+      <property name="minimum">
+       <double>-180.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>180.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="sb_extent_miny">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>8</number>
+      </property>
+      <property name="minimum">
+       <double>-90.000000000000000</double>
+      </property>
+      <property name="maximum">
+       <double>90.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_layers">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>164</y>
+        <width>261</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_canvasExtent">
+      <property name="geometry">
+       <rect>
+        <x>287</x>
+        <y>164</y>
+        <width>120</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Canvas Extent</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="tbtn_draw">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>58</y>
+        <width>71</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Draw Extent</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_layerextent">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>204</y>
+        <width>261</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Layer Extent</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbl_message_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>97</y>
+        <width>120</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_reset">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>90</y>
+        <width>71</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>RESET</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_use_features">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>210</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Use features of layer</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_wholeEarth">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>20</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>WHOLE EARTH</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>150</y>
+       <width>130</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Output Type</string>
+     </property>
+     <widget class="QCheckBox" name="chb_polygon">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Polygon</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_centroid">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>47</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Centroid</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_metafile">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>74</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Metafile</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Grid Cell From Cell Id</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>4</y>
+       <width>130</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>DGGS Type</string>
+     </property>
+     <widget class="QComboBox" name="cb_dggstype_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>23</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>ISEA7H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SUPERFUND</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PLANETRISK</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA3H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA4H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA4T</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA4D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ISEA43H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>IGEO7</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER3H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER4H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER4T</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER4D</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER43H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FULLER7H</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>UBER H3</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>4</y>
+       <width>130</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Resolution</string>
+     </property>
+     <widget class="QSpinBox" name="sb_resolution_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>35</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="lw_cellids">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>151</width>
+       <height>264</height>
+      </rect>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <property name="layoutMode">
+      <enum>QListView::SinglePass</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_addcellid">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ADD</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_deletecellid">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>DELETE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_clearcellids">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>CLEAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_browsecellids">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>BROWSE</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>80</y>
+       <width>271</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="title">
+      <string>Output Type</string>
+     </property>
+     <widget class="QCheckBox" name="chb_polygon_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>111</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Polygon</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_centroid_2">
+      <property name="geometry">
+       <rect>
+        <x>144</x>
+        <y>20</y>
+        <width>111</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Centroid</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_children_2">
+      <property name="geometry">
+       <rect>
+        <x>144</x>
+        <y>50</y>
+        <width>101</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Children</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_neighbor_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>121</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Neighbors</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chb_metafile_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>84</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Metafile</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pb_getselected_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>GET SELECTED</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="sb_cellid">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="maximum">
+      <double>99999999999999996863366107917975552.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="le_cellid">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>le_cellid</zorder>
+    <zorder>sb_cellid</zorder>
+    <zorder>groupBox_8</zorder>
+    <zorder>groupBox_9</zorder>
+    <zorder>lw_cellids</zorder>
+    <zorder>pb_addcellid</zorder>
+    <zorder>pb_deletecellid</zorder>
+    <zorder>pb_clearcellids</zorder>
+    <zorder>pb_browsecellids</zorder>
+    <zorder>groupBox_10</zorder>
+    <zorder>pb_getselected_2</zorder>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_execute">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>531</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>GENERATE GRIDS</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>621</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="title">
+    <string>Working Directory</string>
+   </property>
+   <widget class="QLineEdit" name="le_wdir">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>35</y>
+      <width>471</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btn_browse">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>35</y>
+      <width>30</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonIconOnly</enum>
+    </property>
+    <property name="arrowType">
+     <enum>Qt::NoArrow</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_message_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cb_add_to_layer">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>70</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>Add grid layer to map</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le_outFileName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>69</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>255</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Output File Name (e.g. dggrid_6)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_wdir">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>70</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cb_dtype">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>35</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>GPKG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KML</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GEOJSON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GML</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_options">
+   <property name="geometry">
+    <rect>
+     <x>551</x>
+     <y>470</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>ADVANCED</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
